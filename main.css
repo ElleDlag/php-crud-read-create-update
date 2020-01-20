@@ -54,7 +54,7 @@ button.upd-id{
     margin-right: 10px;
 }
 button.upd-id .fas{
-    color:var(--txtDetail)
+    color:var(--colorDetailBck)
 }
 button.upd-id.hidethis{
     visibility: hidden;
