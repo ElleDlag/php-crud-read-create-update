@@ -38,22 +38,40 @@ ul,li{
     background:var(--colorDetailBck);
     color: var(--txtDetail);
 }
+.icon-delete button{
+    background: transparent;
+    border:none
+}
+.icon-delete button .fas{
+    color:var( --txtDetail);
+}
 .rowResult:not(:last-child)>.idResult{
     border-bottom:1px solid var(--txtDetail);
 }
+button.upd-id{
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
+button.upd-id .fas{
+    color:var(--txtDetail)
+}
+button.upd-id.hidethis{
+    visibility: hidden;
+}
 
 
 
-form{
+.formPushData form{
     padding:30px 0px;
     justify-content: center;
 }
-form .parameters{
+.formPushData form .parameters{
     text-align: center;
     padding:5px;
 }
 
-form .parameters label{
+.formPushData form .parameters label{
     background:var(--colorDetailBck);
     text-align: center;
     display: block;
@@ -61,8 +79,8 @@ form .parameters label{
     font-size: 24px;
     color: var(--txtDetail);
 }
-form .parameters select,
-form .parameters input{
+.formPushData form .parameters select,
+.formPushData form .parameters input{
     width:100%;
     -webkit-appearance: none;
     border-radius: 0;
@@ -71,7 +89,7 @@ form .parameters input{
     font-size: 20px;
 }  
 
-form .parameters select{
+.formPushData form .parameters select{
     -webkit-appearance: none;
     -moz-appearance: none;
     background: white;

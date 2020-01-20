@@ -52,14 +52,35 @@
     <!-- template for handlebar -->
     <script id="box-template" type="text/x-handlebars-template">
         <div class="rowResult d-flex flex-nowrap">
-        <div class="idResult col-1 d-flex align-items-center justify-content-center">
-        ID: {{id}}
+        <div class="idResult col-1 d-flex flex-column justify-content-center align-items-center">
+            <div class='idnumber mb-3'>ID: {{id}}</div> 
+            <div class="icon-delete">
+                <button type="submit" class='del-id' data-id='{{id}}' value='{{id}}'>
+                <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
         </div>
         <div class="details flex-grow-1">
-            <div><b>Tipo letto: </b>{{title}}</div> 
-            <div><b>Descrizione: </b>{{description}}</div> 
-            <div><b>Creato il: </b>{{creatoil}}</div> 
-            <div><b>Aggiornato il: </b>{{updateil}}</div> 
+            <div>
+                <button type="submit" class='upd-id' data-id='{{id}}'>
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <b>Tipo letto: </b>{{title}}</div> 
+            <div>
+                <button type="submit" class='upd-id' data-id='{{id}}'>
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <b>Descrizione: </b>{{description}}</div> 
+            <div>
+                <button type="submit" class='upd-id hidethis' data-id='{{id}}'>
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <b>Creato il: </b>{{creatoil}}</div> 
+            <div>
+                <button type="submit" class='upd-id' data-id='{{id}}'>
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <b>Aggiornato il: </b>{{updateil}}</div> 
         </div>
         </div>
     </script>
